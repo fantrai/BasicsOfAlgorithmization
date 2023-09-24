@@ -5,26 +5,18 @@ namespace Tasks
 {
     class Program
     {
-        static List<InterfaceTask> programs;
+        static List<InterfaceTask> programs = new List<InterfaceTask>() 
+        {
+                new Task1(),
+                new Task2(),
+                new PracticalWork_1and2_1(),
+                new PracticalWork_1and2_2(),
+        };
 
         static void Main()
         {
             Hello();
-            ProgramList();
             StartMainMenu();
-        }
-
-        /// <summary>
-        /// здесь записываются все созданные программы в лист, чтобы иметь возможность в дальнейшем их запускать
-        /// </summary>
-        /// <returns></returns>
-        static void ProgramList()
-        {
-            programs = new List<InterfaceTask>
-            {
-                new Task1(),
-                new Task2()
-            };
         }
 
         /// <summary>

@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="AbstractProgram.cs" />
     <Compile Include="InterfaceTask.cs" />
+    <Compile Include="PracticalWork_1and2.cs" />
+    <Compile Include="PracticalWork_1and2_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceMetods.cs" />
