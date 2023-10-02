@@ -11,6 +11,7 @@ namespace Tasks
                 new Task2(),
                 new PracticalWork_1and2_1(),
                 new PracticalWork_1and2_2(),
+                new Task3(),
         };
 
         static void Main()
