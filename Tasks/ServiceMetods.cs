@@ -4,6 +4,9 @@ namespace Tasks
 {
     static class ServiceMetods
     {
+        /// <summary>
+        /// программа будет ожидать нажатие клавиши с клавиатуры
+        /// </summary>
         public static void TapToContinue()
         {
             Console.ForegroundColor = ConsoleColor.Green;
