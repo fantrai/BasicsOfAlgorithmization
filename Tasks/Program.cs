@@ -5,7 +5,7 @@ namespace Tasks
 {
     class Program
     {
-        static List<InterfaceTask> programs = new List<InterfaceTask>() 
+        static List<InterfaceTask> programs = new List<InterfaceTask>()
         {
                 new Task1(),
                 new Task2(),
@@ -14,6 +14,8 @@ namespace Tasks
                 new Task3(),
                 new PracticalWork_2_1(),
                 new PracticalWork_2_2(),
+                new PracticalWork_3_1(),
+                new PracticalWork_3_2(),
         };
 
         static void Main()
@@ -92,10 +94,15 @@ namespace Tasks
                 case ConsoleKey.UpArrow:
                     if (posCursor > 0)
                         posCursor--;
+                    else
+                        posCursor = programs.Count - 1;
                     break;
 
                 case ConsoleKey.DownArrow:
-                    if (posCursor < programs.Count - 1) posCursor++;
+                    if (posCursor < programs.Count - 1) 
+                        posCursor++;
+                    else
+                        posCursor = 0;
                     break;
             }
 

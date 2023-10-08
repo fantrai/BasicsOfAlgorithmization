@@ -8,10 +8,8 @@ namespace Tasks
         public override string Date { get => "18 сентября 2023"; }
         public override string TextTask => "Программа должна решать выражение (X+Y)/(Y+1) - (XY -12)/(34+X), где X и Y - вводимое с клавиатуры число, и выводить результат на экран";
 
-        public override void StartProgram()
+        public override void Program()
         {
-            base.StartProgram();
-
             Console.WriteLine("Введите первое используемое в формуле число");
             float val1 = InputValue();
             Console.WriteLine("Введите второе используемое в формуле число");
@@ -20,8 +18,6 @@ namespace Tasks
             double result = (val1+val2)/(val2+1) - (val1*val2 - 12)/(34+val1);
 
             Console.WriteLine("Результат вычисления: " + result);
-
-            ServiceMetods.TapToContinue();
         }
 
         /// <summary>

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Tasks
 {
-    internal class PracticalWork_2_2 : AbstractProgram
+    internal class PracticalWork_2_2 : AbstractPracticalWork
     {
-        public override string NameTask => "Практическая работа 2. Вариант 1 (программа 2)";
-
         public override string Date => "2 октября 2023";
 
         public override string TextTask => "Создайте программу, которая может определить существование\r\nтреугольника и его тип.";
 
-        public override void StartProgram()
-        {
-            base.StartProgram();
+        public override int NumPracticalWork => 2;
 
+        public override int NumProgram => 2;
+
+        public override void Program()
+        {
             float[] sides = new float[3];
 
             //заполняем массив сторонами
@@ -63,8 +63,6 @@ namespace Tasks
             {
                 Console.WriteLine("Это же разносторонний треугольник!");
             }
-
-            ServiceMetods.TapToContinue();            
         }
 
         /// <summary>

@@ -8,10 +8,8 @@ namespace Tasks
         public override string Date { get => "18 сентября 2023"; }
         public override string TextTask => "Программа должна решать выражение X - (X^3)/3 + (X^5)/5, где X - вводимое с клавиатуры число, и выводить результат на экран";
 
-        public override void StartProgram()
+        public override void Program()
         {
-            base.StartProgram();
-
             Console.WriteLine("Введите используемое в формуле число");
             float inputValue;
             bool parse = false;
@@ -28,8 +26,6 @@ namespace Tasks
             double result = inputValue - Math.Pow(inputValue, 5)/3 + Math.Pow(inputValue, 5)/5;
 
             Console.WriteLine("Результат вычисления: " + result);
-
-            ServiceMetods.TapToContinue();
         }
     }
 }

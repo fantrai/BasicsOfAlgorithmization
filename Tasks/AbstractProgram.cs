@@ -11,7 +11,10 @@ namespace Tasks
         virtual public void StartProgram()
         {
             PreviewProgram();
+            Program();
+            ServiceMetods.TapToContinue();
         }
+        abstract public void Program();
 
         void PreviewProgram() 
         {

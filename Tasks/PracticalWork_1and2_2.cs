@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Tasks
 {
-    internal class PracticalWork_1and2_2 : AbstractProgram
+    internal class PracticalWork_1and2_2 : AbstractPracticalWork
     {
-        public override string NameTask => "Практическая работа 1-2. Вариант 1 (программа 2)";
-
         public override string Date => "20 сентября 2023";
 
         public override string TextTask => "Составить логическое выражение, печатающую значение true, если указанное высказывание является истинным, и false — в противном случае." +
             "\nX— отрицательное целое число, делящееся на К нацело. В программе не должны использоваться циклы или ветвления";
 
-        public override void StartProgram()
-        {
-            base.StartProgram();
+        public override int NumPracticalWork => 1;
 
+        public override int NumProgram => 2;
+
+        public override void Program()
+        {
             Console.WriteLine("Введите число X");
             float inputX = float.Parse(Console.ReadLine());
             Console.WriteLine("Введите число K");
@@ -27,8 +27,6 @@ namespace Tasks
             bool result = inputX < 0 && inputX % inputK == 0;
 
             Console.WriteLine("Результат вычисления: " + result);
-
-            ServiceMetods.TapToContinue();
         }
     }
 }

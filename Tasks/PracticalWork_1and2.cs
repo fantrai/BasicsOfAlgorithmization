@@ -6,24 +6,22 @@ using System.Threading.Tasks;
 
 namespace Tasks
 {
-    internal class PracticalWork_1and2_1 : AbstractProgram
+    internal class PracticalWork_1and2_1 : AbstractPracticalWork
     {
-        public override string NameTask => "Практическая работа 1-2. Вариант 1 (программа 1)";
-
         public override string Date => "20 сентября 2023";
 
         public override string TextTask => "Программа должна решать выражение X - (X^3)/3 + (X^5)/5, где X - вводимое с клавиатуры число, и выводить результат на экран. В программе не должны использоваться циклы или ветвления";
 
-        public override void StartProgram()
-        {
-            base.StartProgram();
+        public override int NumPracticalWork => 1;
 
+        public override int NumProgram => 1;
+
+        public override void Program()
+        {
             Console.WriteLine("Введите используемое в формуле число");
             float inputValue = float.Parse(Console.ReadLine());
             double result = inputValue - Math.Pow(inputValue, 5) / 3 + Math.Pow(inputValue, 5) / 5;
             Console.WriteLine("Результат вычисления: " + result);
-
-            ServiceMetods.TapToContinue();
         }
     }
 }

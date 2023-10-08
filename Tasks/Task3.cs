@@ -14,10 +14,8 @@ namespace Tasks
 
         public override string TextTask => "Пусть элементами круга являются 1 - радиус, 2 - диаметр, 3 - длинна окружности. По заданному номеру элемента выполнить запрос соответствующего значения и вычислить площадь круга";
 
-        public override void StartProgram()
+        public override void Program()
         {
-            base.StartProgram();
-
             Console.WriteLine("Выберите элемент круга, по которому будет рассчитываться площадь\n1 - радиус\n2 - диаметр\n3 - длинна окружности");
             int numberCircleElement;
             InputValue(out numberCircleElement, 1, 3);
@@ -44,8 +42,6 @@ namespace Tasks
             }
 
             Console.WriteLine("Площадь круга составляет  " + result);
-
-            ServiceMetods.TapToContinue();
         }
 
         /// <summary>
