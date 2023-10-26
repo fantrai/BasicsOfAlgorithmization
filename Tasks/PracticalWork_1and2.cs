@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tasks
 {
-    internal class PracticalWork_1and2_1 : AbstractPracticalWork
+    internal class PracticalWork_1_1 : AbstractPracticalWork
     {
         public override string Date => "20 сентября 2023";
 

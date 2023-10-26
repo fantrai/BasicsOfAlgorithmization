@@ -27,11 +27,15 @@ namespace Tasks
             {
                 parse = float.TryParse(Console.ReadLine(), out returnValue);
                 if (!parse)
+                {
                     Console.WriteLine("Введено некорректное значение! Попробуйте снова!");
+                    continue;
+                }
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
                     Console.WriteLine("Выход за пределы допустимого значения! Попробуйте снова!");
+                    continue;
                 }
             } while (!parse);
         }
@@ -42,14 +46,40 @@ namespace Tasks
             {
                 parse = int.TryParse(Console.ReadLine(), out returnValue);
                 if (!parse)
+                {
                     Console.WriteLine("Введено некорректное значение! Попробуйте снова!");
+                    continue;
+                }
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
                     Console.WriteLine("Выход за пределы допустимого значения! Попробуйте снова!");
+                    continue;
                 }
             } while (!parse);
         }
 
+        /// <summary>
+        /// заполняет массив вводом пользователя с учетом ошибок
+        /// </summary>
+        /// <param name="returnMassiv"></param>
+        /// <param name="minValue"></param>
+        /// <param name="maxValue"></param>
+        public static void InputMassiv(ref int[] returnMassiv, int minValue = int.MinValue, int maxValue = int.MaxValue)
+        {
+            for (int i = 0; i < returnMassiv.Length; i++)
+            {
+                Console.Write($"Введите элемент {i +1}: ");
+                InputValue(out returnMassiv[i]);
+            }
+        }
+        public static void InputMassiv(ref float[] returnMassiv, int minValue = int.MinValue, int maxValue = int.MaxValue)
+        {
+            for (int i = 0; i < returnMassiv.Length; i++)
+            {
+                Console.Write($"Введите элемент {i + 1}: ");
+                InputValue(out returnMassiv[i]);
+            }
+        }
     }
 }

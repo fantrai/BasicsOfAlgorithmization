@@ -9,13 +9,17 @@ namespace Tasks
         {
                 new Task1(),
                 new Task2(),
-                new PracticalWork_1and2_1(),
-                new PracticalWork_1and2_2(),
+                new PracticalWork_1_1(),
+                new PracticalWork_1_2(),
                 new Task3(),
                 new PracticalWork_2_1(),
                 new PracticalWork_2_2(),
                 new PracticalWork_3_1(),
                 new PracticalWork_3_2(),
+                new PracticalWork_4_1(),
+                new PracticalWork_4_2(),
+                new PracticalWork_4_3(),
+                new PracticalWork_4_4(),
         };
 
         static void Main()
