@@ -20,6 +20,8 @@ namespace Tasks
                 new PracticalWork_4_2(),
                 new PracticalWork_4_3(),
                 new PracticalWork_4_4(),
+                new PracticalWork_5_1(),
+                new PracticalWork_5_2(),
         };
 
         static void Main()

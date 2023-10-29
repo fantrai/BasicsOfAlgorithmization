@@ -10,7 +10,7 @@ namespace Tasks
     {
         public abstract int NumPracticalWork { get; }
 
-        public int NumOption = 1;
+        virtual public int NumOption { get; } = 1;
 
         public abstract int NumProgram { get; }
 
