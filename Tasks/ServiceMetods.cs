@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace Tasks
 {
@@ -73,13 +74,60 @@ namespace Tasks
                 InputValue(out returnMassiv[i]);
             }
         }
-        public static void InputMassiv(ref float[] returnMassiv, int minValue = int.MinValue, int maxValue = int.MaxValue)
+        public static void InputMassiv(ref float[] returnMassiv, float minValue = float.MinValue, float maxValue = float.MaxValue)
         {
             for (int i = 0; i < returnMassiv.Length; i++)
             {
                 Console.Write($"Введите элемент {i + 1}: ");
                 InputValue(out returnMassiv[i]);
             }
+        }
+
+        /// <summary>
+        /// заполняет матрицу случайными значениями
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <param name="minRandValue"></param>
+        /// <param name="maxRandValue"></param>
+        public static void RandomValForMatrix(ref int[,] matrix, int minRandValue = int.MinValue, int maxRandValue = int.MaxValue, bool writeToConcole = false)
+        {
+            ConsoleColor consoleColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Random rand = new Random();
+            if (writeToConcole) Console.WriteLine("Создание случайной матрицы...");
+            for (int i = 0;i < matrix.GetLength(0); i++)
+            {
+                for(int j = 0; j < matrix.GetLength(1); j++) 
+                {
+                    matrix[i,j] = rand.Next(minRandValue, maxRandValue);
+                    if(writeToConcole) Console.Write(matrix[i, j] + "\t");
+                }
+                if (writeToConcole) Console.WriteLine();
+            }
+            if (writeToConcole) Console.WriteLine("Ваша матрица готова!\n");
+
+            Console.ForegroundColor = consoleColor;
+        }
+        public static void RandomValForMatrix(ref float[,] matrix, float minRandValue = float.MinValue, float maxRandValue = float.MaxValue, bool writeToConcole = false)
+        {
+            ConsoleColor consoleColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
+            Random rand = new Random();
+            if (writeToConcole) Console.WriteLine("Создание случайной матрицы...");
+            for (int i = 0;i < matrix.GetLength(0); i++)
+            {
+                for(int j = 0; j < matrix.GetLength(1); j++) 
+                {
+                    matrix[i,j] = (float)rand.NextDouble() * (maxRandValue - minRandValue) + minRandValue;
+                    if (writeToConcole) Console.Write(matrix[i, j] + "\t");
+                }
+                if (writeToConcole) Console.WriteLine();
+            }
+            if (writeToConcole) Console.WriteLine("Ваша матрица готова!\n");
+
+            Console.ForegroundColor = consoleColor;
         }
     }
 }
