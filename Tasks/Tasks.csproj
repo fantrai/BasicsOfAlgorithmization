@@ -62,6 +62,8 @@
     <Compile Include="PracticalWork_5_2.cs" />
     <Compile Include="PracticalWork_6.cs" />
     <Compile Include="PracticalWork_7_2.cs" />
+    <Compile Include="PracticalWork_8_1.cs" />
+    <Compile Include="PracticalWork_8_2.cs" />
     <Compile Include="PractocalWork_7_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
