@@ -1,0 +1,7 @@
+D:\studies\BasicsOfAlgorithmization\Tasks\bin\Debug\Tasks.exe.config
+D:\studies\BasicsOfAlgorithmization\Tasks\bin\Debug\Tasks.exe
+D:\studies\BasicsOfAlgorithmization\Tasks\bin\Debug\Tasks.pdb
+D:\studies\BasicsOfAlgorithmization\Tasks\obj\Debug\Tasks.csproj.AssemblyReference.cache
+D:\studies\BasicsOfAlgorithmization\Tasks\obj\Debug\Tasks.csproj.CoreCompileInputs.cache
+D:\studies\BasicsOfAlgorithmization\Tasks\obj\Debug\Tasks.exe
+D:\studies\BasicsOfAlgorithmization\Tasks\obj\Debug\Tasks.pdb

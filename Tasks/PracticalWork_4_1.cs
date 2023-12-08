@@ -21,7 +21,7 @@ namespace Tasks
             Console.WriteLine("Введите длинну последовательности, которую хотите ввести");
             ServiceMetods.InputValue(out int size, 2);
             float[] sequence = new float[size];
-            ServiceMetods.InputMassiv(ref sequence); //заполняет массив вводимыми элементами
+            ServiceMetods.InputArray(ref sequence); //заполняет массив вводимыми элементами
 
             bool result = true;
 

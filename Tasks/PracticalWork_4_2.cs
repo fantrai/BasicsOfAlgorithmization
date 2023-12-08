@@ -21,7 +21,7 @@ namespace Tasks
             Console.WriteLine("Введите длинну последовательности, которую хотите ввести");
             ServiceMetods.InputValue(out int size, 1);
             int[] sequence = new int[size];
-            ServiceMetods.InputMassiv(ref sequence);
+            ServiceMetods.InputArray(ref sequence);
 
             bool result = false;
 

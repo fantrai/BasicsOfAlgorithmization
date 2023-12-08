@@ -21,7 +21,7 @@ namespace Tasks
             Console.WriteLine("Введите длинну массива, который хотите заполнить");
             ServiceMetods.InputValue(out int size, 1);
             int[] sequence = new int[size];
-            ServiceMetods.InputMassiv(ref sequence, 1); //заполняет массив вводимыми элементами >= 1
+            ServiceMetods.InputArray(ref sequence, 1); //заполняет массив вводимыми элементами >= 1
 
             Console.WriteLine("Введите К");
             ServiceMetods.InputValue(out int k);

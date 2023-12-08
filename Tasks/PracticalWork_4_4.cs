@@ -21,7 +21,7 @@ namespace Tasks
             Console.WriteLine("Введите длинну массива, который хотите заполнить");
             ServiceMetods.InputValue(out int size, 1);
             float[] sequence = new float[size];
-            ServiceMetods.InputMassiv(ref sequence);
+            ServiceMetods.InputArray(ref sequence);
 
             int positiveCount = 0;
             int negativeCount = 0;

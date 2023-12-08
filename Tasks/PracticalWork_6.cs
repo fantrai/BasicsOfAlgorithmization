@@ -20,7 +20,7 @@ namespace Tasks
         {
             Console.WriteLine("Заполните массив");
             int[] arr = new int[5];
-            ServiceMetods.InputMassiv(ref arr, 0);
+            ServiceMetods.InputArray(ref arr, 0);
             for (int i = 0; i < arr.Length; i++) 
             {
                 bool easyVal = true;

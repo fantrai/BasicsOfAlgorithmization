@@ -23,7 +23,7 @@ namespace Tasks
             Console.WriteLine("Введите длинну последовательности, которую хотите заполнить");
             ServiceMetods.InputValue(out int size, 1);
             int[] sequence = new int[size];
-            ServiceMetods.InputMassiv(ref sequence, 1); //заполняет массив вводимыми элементами >= 1
+            ServiceMetods.InputArray(ref sequence, 1); //заполняет массив вводимыми элементами >= 1
 
             Console.WriteLine("Введите m");
             ServiceMetods.InputValue(out int m);

@@ -5,31 +5,15 @@ namespace Tasks
 {
     class Program
     {
-        static List<InterfaceTask> programs = new List<InterfaceTask>()
+        static List<InterfaceTask> programs = new List<InterfaceTask>() 
         {
                 new Task1(),
                 new Task2(),
-                new PracticalWork_1_1(),
-                new PracticalWork_1_2(),
+                new PracticalWork_1and2_1(),
+                new PracticalWork_1and2_2(),
                 new Task3(),
                 new PracticalWork_2_1(),
                 new PracticalWork_2_2(),
-                new PracticalWork_3_1(),
-                new PracticalWork_3_2(),
-                new PracticalWork_4_1(),
-                new PracticalWork_4_2(),
-                new PracticalWork_4_3(),
-                new PracticalWork_4_4(),
-                new PracticalWork_5_1(),
-                new PracticalWork_5_2(),
-                new PracticalWork_6(),
-                new Task4(),
-                new PractocalWork_7_1(),
-                new PracticalWork_7_2(),
-                new PracticalWork_8_1(),
-                new PracticalWork_8_2(),
-                new PracticalWork_9(),
-                new PracticalWork_10(),
         };
 
         static void Main()
@@ -108,15 +92,10 @@ namespace Tasks
                 case ConsoleKey.UpArrow:
                     if (posCursor > 0)
                         posCursor--;
-                    else
-                        posCursor = programs.Count - 1;
                     break;
 
                 case ConsoleKey.DownArrow:
-                    if (posCursor < programs.Count - 1) 
-                        posCursor++;
-                    else
-                        posCursor = 0;
+                    if (posCursor < programs.Count - 1) posCursor++;
                     break;
             }
 
