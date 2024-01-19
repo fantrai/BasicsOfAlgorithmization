@@ -30,6 +30,7 @@ namespace Tasks
                 new PracticalWork_8_2(),
                 new PracticalWork_9(),
                 new PracticalWork_10(),
+                new Task5(),
         };
 
         static void Main()
