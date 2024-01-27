@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tasks
 {
-    internal class PractocalWork_7_1 : AbstractPracticalWork
+    internal class PracticalWork_7_1 : AbstractPracticalWork
     {
         public override int NumPracticalWork => 7;
 

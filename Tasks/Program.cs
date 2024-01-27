@@ -24,13 +24,15 @@ namespace Tasks
                 new PracticalWork_5_2(),
                 new PracticalWork_6(),
                 new Task4(),
-                new PractocalWork_7_1(),
+                new PracticalWork_7_1(),
                 new PracticalWork_7_2(),
                 new PracticalWork_8_1(),
                 new PracticalWork_8_2(),
                 new PracticalWork_9(),
                 new PracticalWork_10(),
                 new Task5(),
+                new PracticalWork_16_1(),
+                new PracticalWork_16_2(),
         };
 
         static void Main()
