@@ -33,6 +33,14 @@ namespace Tasks
                 new Task5(),
                 new PracticalWork_16_1(),
                 new PracticalWork_16_2(),
+                new PracticalWork_16_3(),
+                new PracticalWork_16_4(),
+                new PracticalWork_17_1(),
+                new PracticalWork_17_2(),
+                new PracticalWork_17_3(),
+                new PracticalWork_18_1(),
+                new PracticalWork_18_2(),
+                new PracticalWork_18_3(),
         };
 
         static void Main()

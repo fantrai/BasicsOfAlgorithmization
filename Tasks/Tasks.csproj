@@ -51,6 +51,14 @@
     <Compile Include="PracticalWork_10.cs" />
     <Compile Include="PracticalWork_16_1.cs" />
     <Compile Include="PracticalWork_16_2.cs" />
+    <Compile Include="PracticalWork_16_3.cs" />
+    <Compile Include="PracticalWork_16_4.cs" />
+    <Compile Include="PracticalWork_17_1.cs" />
+    <Compile Include="PracticalWork_17_2.cs" />
+    <Compile Include="PracticalWork_17_3.cs" />
+    <Compile Include="PracticalWork_18_1.cs" />
+    <Compile Include="PracticalWork_18_2.cs" />
+    <Compile Include="PracticalWork_18_3.cs" />
     <Compile Include="PracticalWork_1and2.cs" />
     <Compile Include="PracticalWork_1_2.cs" />
     <Compile Include="PracticalWork_2_1.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Windows;
 
 namespace Tasks
 {
@@ -35,7 +36,8 @@ namespace Tasks
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
-                    Console.WriteLine("Выход за пределы допустимого значения! Попробуйте снова!");
+                    if (returnValue < minValue) Console.WriteLine($"Введенное число должно быть больше {minValue}! Попробуйте снова!");
+                    else Console.WriteLine($"Введенное число должно быть меньше {maxValue}! Попробуйте снова!");
                     continue;
                 }
             } while (!parse);
@@ -54,7 +56,8 @@ namespace Tasks
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
-                    Console.WriteLine("Выход за пределы допустимого значения! Попробуйте снова!");
+                    if (returnValue < minValue) Console.WriteLine($"Ваше число должно быть больше {minValue}! Попробуйте снова!");
+                    else Console.WriteLine($"Ваше число должно быть меньше {maxValue}! Попробуйте снова!");
                     continue;
                 }
             } while (!parse);
@@ -157,7 +160,11 @@ namespace Tasks
             Console.ForegroundColor = consoleColor;
         }
 
-        public static void PrintMatrix(int[,] matrix)
+        /// <summary>
+        /// выводит матрицу на экран
+        /// </summary>
+        /// <param name="matrix"></param>
+        public static void PrintMatrix(in int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
@@ -168,6 +175,24 @@ namespace Tasks
                 Console.WriteLine();
             }
 
+        }
+
+        /// <summary>
+        /// возвращает введенный с клавиатуры вектор
+        /// </summary>
+        /// <returns></returns>
+        public static Vector InputVector()
+        {
+            Vector vector = new Vector();
+            Console.Write("X = ");
+            float x;
+            InputValue(out x);
+            Console.Write("Y = ");
+            float y;
+            InputValue(out y);
+            vector.X = x;
+            vector.Y = y;
+            return vector;
         }
     }
 }
