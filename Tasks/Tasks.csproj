@@ -59,6 +59,9 @@
     <Compile Include="PracticalWork_18_1.cs" />
     <Compile Include="PracticalWork_18_2.cs" />
     <Compile Include="PracticalWork_18_3.cs" />
+    <Compile Include="PracticalWork_19_1.cs" />
+    <Compile Include="PracticalWork_19_2.cs" />
+    <Compile Include="PracticalWork_19_3.cs" />
     <Compile Include="PracticalWork_1and2.cs" />
     <Compile Include="PracticalWork_1_2.cs" />
     <Compile Include="PracticalWork_2_1.cs" />

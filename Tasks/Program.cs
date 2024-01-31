@@ -41,6 +41,9 @@ namespace Tasks
                 new PracticalWork_18_1(),
                 new PracticalWork_18_2(),
                 new PracticalWork_18_3(),
+                new PracticalWork_19_1(),
+                new PracticalWork_19_2(),
+                new PracticalWork_19_3(),
         };
 
         static void Main()
