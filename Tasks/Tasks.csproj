@@ -82,6 +82,12 @@
     <Compile Include="PracticalWork_7_1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PW_20_2.cs" />
+    <Compile Include="PW_20_1.cs" />
+    <Compile Include="PW_20_3.cs" />
+    <Compile Include="PW_21_1.cs" />
+    <Compile Include="PW_21_2.cs" />
+    <Compile Include="PW_22.cs" />
     <Compile Include="ServiceMetods.cs" />
     <Compile Include="Task1.cs" />
     <Compile Include="Task2.cs" />

@@ -36,8 +36,8 @@ namespace Tasks
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
-                    if (returnValue <= minValue) Console.WriteLine($"Введенное число должно быть больше {minValue}! Попробуйте снова!");
-                    else Console.WriteLine($"Введенное число должно быть меньше {maxValue}! Попробуйте снова!");
+                    if (returnValue <= minValue) Console.WriteLine($"Введенное число должно быть не меньше {minValue}! Попробуйте снова!");
+                    else Console.WriteLine($"Введенное число должно быть не больше {maxValue}! Попробуйте снова!");
                     continue;
                 }
             } while (!parse);
@@ -56,8 +56,8 @@ namespace Tasks
                 if (!(returnValue >= minValue && returnValue <= maxValue))
                 {
                     parse = false;
-                    if (returnValue <= minValue) Console.WriteLine($"Ваше число должно быть больше {minValue}! Попробуйте снова!");
-                    else Console.WriteLine($"Ваше число должно быть меньше {maxValue}! Попробуйте снова!");
+                    if (returnValue <= minValue) Console.WriteLine($"Введенное число должно быть не меньше {minValue}! Попробуйте снова!");
+                    else Console.WriteLine($"Введенное число должно быть не больше {maxValue}! Попробуйте снова!");
                     continue;
                 }
             } while (!parse);

@@ -44,6 +44,12 @@ namespace Tasks
                 new PracticalWork_19_1(),
                 new PracticalWork_19_2(),
                 new PracticalWork_19_3(),
+                new PW_20_1(),
+                new PW_20_2(),
+                new PW_20_3(),
+                new PW_21_1(),
+                new PW_21_2(),
+                new PW_22(),
         };
 
         static void Main()
@@ -58,7 +64,9 @@ namespace Tasks
         static void Hello()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Добро пожаловать!\n\nЗдесь собраны все работы студента\nгруппы 66-Д9-2ИНС\nНоскова Владимира");
+            Console.WriteLine("Добро пожаловать!" +
+                "\n\nЗдесь собраны все работы студента" +
+                "\nгруппы 66-Д9-2ИНС\nНоскова Владимира");
             Console.ResetColor();
             ServiceMetods.TapToContinue();
         }
@@ -88,7 +96,8 @@ namespace Tasks
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Выберите интересующую вас работу из списка ниже.");
-            Console.WriteLine("Используйте стрелочки вверх и вниз для передвижения курсора. Нажмите Enter чтобы посмотреть работу.");
+            Console.WriteLine("Используйте стрелочки вверх и вниз для передвижения курсора. " +
+                "Нажмите Enter чтобы посмотреть работу.");
             Console.ResetColor();
 
             for (int i = 0; i < programs.Count; i++)
