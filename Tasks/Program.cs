@@ -50,6 +50,10 @@ namespace Tasks
                 new PW_21_1(),
                 new PW_21_2(),
                 new PW_22(),
+                new PW_23_1(),
+                new PW_23_2(),
+                new PW_23_3(),
+                new PW_24(),
         };
 
         static void Main()

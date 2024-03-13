@@ -24,70 +24,71 @@ namespace Tasks
 
         public override void Program()
         {
-            int countHours = 0, costHour = 0;
+            float countHours = 0, costHour = 0;
             Console.WriteLine("Введите количество рабочих часов");
             ServiceMetods.InputValue(out countHours);
             Console.WriteLine("Введите стоимость рабочего часа");
             ServiceMetods.InputValue(out costHour);
 
-            Work work = new Work();
+            WorkFromPW22 work = new WorkFromPW22();
             work.SetVals(countHours, costHour);
             work.Print();
         }
 
-        public class Work
+    }
+
+    public class WorkFromPW22
+    {
+        public WorkFromPW22() { }
+        public WorkFromPW22(float countHours, float costHour)
         {
-            public Work() { }
-            public Work(int countHours, int costHour)
-            {
-                CountHoursWork = countHoursWork;
-                CostHourWork = costHourWork;
-            }
+            CountHoursWork = countHoursWork;
+            CostHourWork = costHourWork;
+        }
 
-            private int countHoursWork;
-            public int CountHoursWork
+        private float countHoursWork = 0;
+        public float CountHoursWork
+        {
+            get { return countHoursWork; }
+            set
             {
-                get { return countHoursWork; }
-                set 
-                {
-                    if (value >= 0)
-                        countHoursWork = value;
-                    else
-                        countHoursWork = 0;
-                }
+                if (value >= 0)
+                    countHoursWork = value;
+                else
+                    countHoursWork = 0;
             }
+        }
 
-            private int costHourWork;
-            public int CostHourWork
+        private float costHourWork = 0;
+        public float CostHourWork
+        {
+            get { return costHourWork; }
+            set
             {
-                get { return costHourWork; }
-                set
-                {
-                    if (value >= 0)
-                        costHourWork = value;
-                    else
-                        costHourWork = 0;
-                }
+                if (value >= 0)
+                    costHourWork = value;
+                else
+                    costHourWork = 0;
             }
+        }
 
-            public int CostWork
-            {
-                get { return countHoursWork * costHourWork; }
-            }
+        public float CostWork
+        {
+            get { return countHoursWork * costHourWork; }
+        }
 
-            public void Print() 
-            {
-                Console.WriteLine(
-                    $"Количество часов: {CountHoursWork}\n" +
-                    $"Стоимость часа: {CostHourWork}" +
-                    $"Итоговая стоимость работы: {CostWork}");
-            }
+        public virtual void Print()
+        {
+            Console.WriteLine(
+                $"Количество часов: {CountHoursWork}\n" +
+                $"Стоимость часа: {CostHourWork}\n" +
+                $"Итоговая стоимость работы: {CostWork}");
+        }
 
-            public void SetVals(int countHours, int costHour)
-            {
-                CountHoursWork = countHoursWork;
-                CostHourWork = costHourWork;
-            }
+        public void SetVals(float countHours, float costHour)
+        {
+            CountHoursWork = countHours;
+            CostHourWork = costHour;
         }
     }
 }

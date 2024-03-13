@@ -14,6 +14,7 @@ namespace Tasks
 
         public abstract int NumProgram { get; }
 
-        public override string NameTask => $"Практическая работа {NumPracticalWork}. Вариант {NumOption} (программа {NumProgram})";
+        public override string NameTask => $"Практическая работа {NumPracticalWork}. " +
+            $"Вариант {NumOption} (программа {NumProgram})";
     }
 }

@@ -88,6 +88,10 @@
     <Compile Include="PW_21_1.cs" />
     <Compile Include="PW_21_2.cs" />
     <Compile Include="PW_22.cs" />
+    <Compile Include="PW_23_1.cs" />
+    <Compile Include="PW_23_2.cs" />
+    <Compile Include="PW_23_3.cs" />
+    <Compile Include="PW_24.cs" />
     <Compile Include="ServiceMetods.cs" />
     <Compile Include="Task1.cs" />
     <Compile Include="Task2.cs" />
