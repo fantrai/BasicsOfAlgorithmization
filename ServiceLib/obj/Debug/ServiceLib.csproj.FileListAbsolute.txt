@@ -1,0 +1,2 @@
+D:\studies\BasicsOfAlgorithmization\ServiceLib\obj\Debug\ServiceLib.csproj.AssemblyReference.cache
+D:\studies\BasicsOfAlgorithmization\ServiceLib\obj\Debug\ServiceLib.csproj.CoreCompileInputs.cache

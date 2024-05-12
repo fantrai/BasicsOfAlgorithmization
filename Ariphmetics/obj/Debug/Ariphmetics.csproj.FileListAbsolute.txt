@@ -1,0 +1,6 @@
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\bin\Debug\Ariphmetics.dll
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\bin\Debug\Ariphmetics.pdb
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\obj\Debug\Ariphmetics.csproj.AssemblyReference.cache
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\obj\Debug\Ariphmetics.csproj.CoreCompileInputs.cache
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\obj\Debug\Ariphmetics.dll
+D:\studies\BasicsOfAlgorithmization\Ariphmetics\obj\Debug\Ariphmetics.pdb

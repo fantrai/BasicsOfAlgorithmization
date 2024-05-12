@@ -13,3 +13,6 @@ C:\Users\nikit\Downloads\BasicsOfAlgorithmization-main\Tasks\obj\Debug\Tasks.csp
 C:\Users\nikit\Downloads\BasicsOfAlgorithmization-main\Tasks\obj\Debug\Tasks.csproj.CoreCompileInputs.cache
 C:\Users\nikit\Downloads\BasicsOfAlgorithmization-main\Tasks\obj\Debug\Tasks.exe
 C:\Users\nikit\Downloads\BasicsOfAlgorithmization-main\Tasks\obj\Debug\Tasks.pdb
+D:\studies\BasicsOfAlgorithmization\Tasks\bin\Debug\Ariphmetics.dll
+D:\studies\BasicsOfAlgorithmization\Tasks\bin\Debug\Ariphmetics.pdb
+D:\studies\BasicsOfAlgorithmization\Tasks\obj\Debug\Tasks.csproj.CopyComplete
